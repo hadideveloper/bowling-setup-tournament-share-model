@@ -1,15 +1,20 @@
 ﻿namespace Bowling.Tournament.Share.Models;
 
 /// <summary>
-/// This is the model that Tournament app will send to scoring system to open a tournament
+/// This is the model that Tournament app will send to scoring system to start an event.
 /// </summary>
-public class TournamentSetupModel
+public class EventSetupModel
 {
     /// <summary>
-    /// The Unique Id of the tournament. 
+    /// The Unique Id of this event. 
     /// Scoring software will return this Id to the API to identify the tournament.
     /// </summary>
     public int Id { get; set; }
+
+    /// <summary>
+    /// Optional event id to display in the scoring system
+    /// </summary>
+    public int? EventId { get; set; }
 
     /// <summary>
     /// Optional name of the tournament
@@ -17,9 +22,14 @@ public class TournamentSetupModel
     public string? Name { get; set; }
     
     /// <summary>
-    /// Optional tournament member number
+    /// Optional tournament register number
     /// </summary>
     public string? TournamentNumber { get; set; }
+
+    /// <summary>
+    /// Optional Squad Number
+    /// </summary>
+    public int? SquadNumber { get; set; }
 
     /// <summary>
     /// Start lane and end lane that the tournament will be played on.
