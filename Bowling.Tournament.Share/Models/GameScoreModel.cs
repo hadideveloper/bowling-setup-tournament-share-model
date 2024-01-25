@@ -39,8 +39,8 @@ public class GameScoreModel
     public bool IsComplete { get; set; }
 
     /// <summary>
-    /// List of frames
-    /// <see cref="EventSetupModel.NumberOfFrames"/>
+    /// List of frames.
+    /// The number of frames bowler plaied. Max is <see cref="EventSetupModel.NumberOfFrames"/>
     /// </summary>
     public List<FrameScoreModel>? Frames { get; set; }
 }

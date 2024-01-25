@@ -8,6 +8,7 @@ public class BowlerScoreModel
 {
     /// <summary>
     /// Bowler Id
+    /// <see cref="BowlerModel.Id"/>
     /// </summary>
     public int Id { get; set; }
 
@@ -15,6 +16,11 @@ public class BowlerScoreModel
     /// Bowler status
     /// </summary>
     public BowlerStatus Status { get; set; }
+
+    ///<summary>
+    /// True means bowler name is changed during the event
+    ///</summary>
+    public bool IsNameChanged { get; set; }
 
     /// <summary>
     /// Bowler name (in case bowler chanes name during the event this name can be different from the initial name)

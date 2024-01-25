@@ -103,4 +103,6 @@ public class EventSetupModel
     /// Otherwise, scoring system will let the secretary to assign bowlers to lanes
     /// </summary>
     public List<LaneAssignmentModel>? LaneAssignments { get; set; }
+
+    public EventBowlerOptions BowlerOptions { get; set; }
 }
